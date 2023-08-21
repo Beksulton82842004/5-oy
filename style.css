@@ -1,0 +1,164 @@
+.btn{
+    width: 120px;
+    height: 40px;
+    background-color: rgba(49,49,196,.1);;
+    color: #33c;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+margin-left: 50px;
+}
+.search{
+    display: flex;
+    width: 500px;
+    position: absolute;
+    left: 450px;
+    top: 0px;
+}
+.main-search{
+    width: 300px;
+    height: 40px;
+}
+.btn2{
+    width: 100px;
+    height: 40px;
+}
+.img2{
+    width: 15px;
+    height: 15px;
+}
+.user{
+    position: absolute;
+    left: 0px ;
+    top: 0px;
+}
+
+.btn_kirish{
+    position: absolute;
+    left: 880px;
+    top: 0px;
+    width: 120px;
+    height: 40px;
+    border: none;
+    background-color: white;
+}
+.btn_kirish:hover{
+    background-color: rgb(223, 223, 229);
+    border-radius: 4px;
+}
+.kirish{
+    position: absolute;
+    left: 53px;
+    top: 10px;
+    font-size: 18px;
+}
+
+.user_img{
+    width: 20px;
+    height: 25px;
+    position: absolute;
+    left: 23px;
+    top: 8px;
+}
+
+.btn_saralangan{
+    position: absolute;
+    left: 970px;
+    top: 0px;
+    width: 140px;
+    height: 40px;
+    border: none;
+    background-color: white;
+}
+.btn_saralangan:hover{
+    background-color: rgb(223, 223, 229);
+    border-radius: 4px;
+}
+.saralangan{
+    position: absolute;
+    left: 38px;
+    top: 5px;
+    font-size: 18px;
+}
+
+.saralangan_img{
+    width: 20px;
+    height: 25px;
+    position: absolute;
+    left: 10px;
+    top: 5px;
+}
+
+.btn_savat{
+    position: absolute;
+    left: 1130px;
+    top: 0px;
+    width: 100px;
+    height: 40px;
+    border: none;
+    background-color: white;
+}
+.btn_savat:hover{
+    background-color: rgb(223, 223, 229);
+    border-radius: 4px;
+}
+.savat{
+    position: absolute;
+    left: 38px;
+    top: 5px;
+    font-size: 18px;
+}
+
+.savat_img{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 10px;
+    top: 5px;
+}
+
+.katalog-ul{
+    display: flex;
+    gap: 40px;
+    padding-top: 20px;
+}
+ 
+li{
+    list-style: none;
+}
+
+p{
+    color: rgb(83, 83, 85);
+    
+}
+
+p:hover{
+    color: rgb(93, 7, 243);
+    cursor: pointer;
+}
+.btn2{
+    position: absolute;
+    left: 0px;
+    border: none;
+}
+header{
+    position: absolute;
+    top: 20px;
+}
+main{
+    position: absolute;
+    top: 150px;
+}
+.btn-sara{
+    border: none;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: white;
+}
+.btn-korzinka{
+    border: none;
+    position: absolute;
+    left: 220px;
+    background-color: white;
+}
