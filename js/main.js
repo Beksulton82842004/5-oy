@@ -6,6 +6,7 @@ const elCards = findElement(".cards");
 const elSearchInput = findElement(".search-input");
 const elSearchBtn = findElement(".btn2");
 
+
 function renderData(array, parent) {
     parent.innerHTML = "";
     array.forEach((element) => {
@@ -14,7 +15,7 @@ function renderData(array, parent) {
         newCard.style.width = "18rem";
 
         newCard.innerHTML = `
-            <img class="card-img-top d-block mx-auto" src="${element.image}" alt="${element.title}" />
+            <img height="300" class="card-img-top d-block mx-auto" src="${element.image}" alt="${element.title}" />
         <div class="card-body">
             <h5 class="card-title">${element.title}</h5>
             <p class="card-text">${element.category}</p>
@@ -54,5 +55,35 @@ elSearchBtn.addEventListener("click", evt => {
     })
     renderData(newArray,elCards); 
 })
+
+
+let categories = data.map(el => el.category)
+let category = new Set()
+categories.forEach(el => {
+category.add(el)
+})
+categories = [...category]
+console.log(category);
+
+let elCategorySelect = findElement(".btn")
+
+categories.forEach(el =>{
+    let option = document.createElement("option")
+    option.value = el
+    option.text = el
+    elCategorySelect.append(option)
+})
+
+
+elCategorySelect.addEventListener("change", function(evt){
+    let categoryName = evt.target.value
+    let categoryProducts = data.filter(el => el.category == categoryName)
+   console.log(categoryProducts);
+   renderData(categoryProducts, elCards);
+}
+)
+
+
+
 
 renderData(data, elCards);
