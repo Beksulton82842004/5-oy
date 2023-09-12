@@ -5,7 +5,7 @@ function findElement(element, parent = document) {
 const elCards = findElement(".cards");
 const elSearchInput = findElement(".search-input");
 const elSearchBtn = findElement(".btn2");
-
+console.log();
 
 function renderData(array, parent) {
     parent.innerHTML = "";
